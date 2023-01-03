@@ -13,6 +13,8 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  refreshToken: { type: String },
+
 });
 const UserModel = mongoose.model("UserModel", UserSchema);
 module.exports = UserModel;
